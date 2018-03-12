@@ -1,5 +1,2 @@
-require "chefilicious/version"
-
-module Chefilicious
-  # Your code goes here...
-end
+require "./chefilicious/version"
+require './chefilicious/cli'
