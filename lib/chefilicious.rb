@@ -1,2 +1,2 @@
-require "./chefilicious/version"
-require './chefilicious/cli'
+require_relative "./chefilicious/version"
+require_relative './chefilicious/cli'

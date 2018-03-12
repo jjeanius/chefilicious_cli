@@ -23,10 +23,10 @@ class Chefilicious::CLI
           1. Breakfast
           2. Lunch
           3. Dinner
-          4. Dessert"
-    input = getS.strip
+          4. Dessert
+          E. or e. Exit"
 
-
+    input = gets.strip
   end
 
   def cooking_time
@@ -34,8 +34,11 @@ class Chefilicious::CLI
           1. Less than 20 minutes
           2. Between 21 to 45 minutes
           3. Between 45 to 60 minutes
-          4. More than 60 Minutes"
-    input = getS.strip
+          4. More than 60 Minutes
+          E. or e. Exit
+          P. or p. Previous Menu"
+
+    input = gets.strip
   end
 
   def allergens
@@ -48,8 +51,10 @@ class Chefilicious::CLI
           6. Soy
           7. Tree Nut
           8. Wheat
-          9. No Allergens"
-    input = getS.strip
+          9. No Allergens
+          E. or e. Exit
+          P. or p. Previous Menu"
+    input = gets.strip
   end
 
   def cuisine
@@ -57,8 +62,10 @@ class Chefilicious::CLI
           1. American
           2. Asian (Chinese, Korean, Japanese, Thai, Vietnamese, Indian)
           3. Latin (Mexican)
-          4. Mediterranean (Greek, Spanish, French, Italian, Middle Eastern)"
-    input = getS.strip
+          4. Mediterranean (Greek, Spanish, French, Italian, Middle Eastern)
+          E. or e. Exit
+          P. or p. Previous Menu"
+    input = gets.strip
   end
 
   def food_category
@@ -69,13 +76,13 @@ class Chefilicious::CLI
           4. Vegetable
           5. Grains/Pasta
           6. Sweets
-          7. Special Dietary Needs"
-    input = getS.strip
+          7. Special Dietary Needs
+          E. or e Exit
+          P. or p Previous Menu"
+    input = gets.strip
   end
 
     def meal_kits
-
-
     end
 
     def meal_description
@@ -83,11 +90,9 @@ class Chefilicious::CLI
     end
 
     def order_now
-
     end
 
   end
-
 
 
 
