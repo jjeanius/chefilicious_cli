@@ -8,7 +8,7 @@ class Chefilicious::CLI
   end
 
   def selections
-    puts "What are you looking for?"
+    puts "What are you looking for?  Please enter a number"
     meal_type
     puts "Please select your desire cooking time:"
     cooking_time
@@ -27,9 +27,7 @@ class Chefilicious::CLI
           1. Breakfast
           2. Lunch
           3. Dinner
-          4. Dessert
-          E. or e. Exit"
-
+          4. Dessert"
     input = gets.strip
   end
 
@@ -38,10 +36,7 @@ class Chefilicious::CLI
           1. Less than 20 minutes
           2. Between 21 to 45 minutes
           3. Between 45 to 60 minutes
-          4. More than 60 Minutes
-          E. or e. Exit
-          P. or p. Previous Menu"
-
+          4. More than 60 Minutes"
     input = gets.strip
   end
 
@@ -55,9 +50,7 @@ class Chefilicious::CLI
           6. Soy
           7. Tree Nut
           8. Wheat
-          9. No Allergens
-          E. or e. Exit
-          P. or p. Previous Menu"
+          9. No Allergens"
     input = gets.strip
   end
 
@@ -79,9 +72,7 @@ class Chefilicious::CLI
           4. Vegetable
           5. Grains/Pasta
           6. Sweets
-          7. Special Dietary Needs
-          E. or e Exit
-          P. or p Previous Menu"
+          7. Special Dietary Needs"
     input = gets.strip
   end
 
@@ -93,7 +84,18 @@ class Chefilicious::CLI
     end
 
     def order_now
+
     end
+
+    def goodbye
+      <<~ HERE DOC
+          You are about to leave Chefilicious program and placing your order with "#{vender}".
+          Please verify all information before check out.
+          Should you need any assistance, please feel free to contact us!
+      HERE DOC
+    end
+
+
 
   end
 
