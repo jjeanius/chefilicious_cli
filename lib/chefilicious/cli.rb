@@ -2,6 +2,12 @@ class Chefilicious::CLI
 
   def call
     puts "Welcome to the Chefilicious!"
+    selections
+    meal_kits
+    goodbye
+  end
+
+  def selections
     puts "What are you looking for?"
     meal_type
     puts "Please select your desire cooking time:"
@@ -14,8 +20,6 @@ class Chefilicious::CLI
     food_category
     puts "Please make your selection:"
     meal_kits
-    meal_details
-
   end
 
   def meal_type
@@ -58,8 +62,7 @@ class Chefilicious::CLI
   end
 
   def cuisine
-    puts "
-          1. American
+    puts "1. American
           2. Asian (Chinese, Korean, Japanese, Thai, Vietnamese, Indian)
           3. Latin (Mexican)
           4. Mediterranean (Greek, Spanish, French, Italian, Middle Eastern)
